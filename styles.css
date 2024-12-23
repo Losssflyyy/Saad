@@ -1,0 +1,127 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+}
+
+.home {
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 48px;
+}
+
+.home p {
+    font-size: 22px;
+}
+
+.skills, .education {
+    background-color: white;
+    color: #333;
+    text-align: center;
+}
+
+.skills ul, .education ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .education li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.skills li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.education li {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .skills li, .education li {
+        display: block;
+        margin: 10px auto;
+    }
+}
